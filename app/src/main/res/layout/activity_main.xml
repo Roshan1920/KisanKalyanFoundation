@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FBFB"
+    android:padding="5dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"
+        android:src="@drawable/indian_farmer" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="395dp"
+        android:layout_height="268dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/kisankalyan" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="16dp"
+        android:hint="Username"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginTop="8dp"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/goToSignUpButton"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="72dp"
+        android:background="#1CB11C"
+        android:cardCornerRadius="true"
+        android:text="REGISTER" />
+
+    <Button
+        android:id="@+id/forgotPassword"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="74dp"
+        android:layout_toEndOf="@id/goToSignUpButton"
+        android:background="#1CB11C"
+        android:text="Forgot Password"
+        android:textSize="10sp" />
+
+</RelativeLayout>

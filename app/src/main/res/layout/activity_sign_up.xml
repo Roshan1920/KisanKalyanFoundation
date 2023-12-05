@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <!-- Add these lines in your RelativeLayout -->
+
+
+    <ImageView
+        android:id="@+id/profilePhoto"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/profileimg" />
+
+    <Button
+        android:id="@+id/pickPhotoButton"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilePhoto"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="-53dp"
+        android:layout_toEndOf="@id/profilePhoto"
+        android:text="Pick Photo"
+        android:textSize="10sp" />
+
+    <Spinner
+        android:id="@+id/titleSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pickPhotoButton"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@id/titleSpinner"
+        android:hint="Full Name" />
+
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullname"
+        android:layout_marginTop="8dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="8dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/genderHintTextView"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="473dp"
+        android:layout_marginEnd="8dp"
+        android:text="Gender"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/genderSpinner"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/genderHintTextView"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/fieldHint"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genderSpinner"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="12dp"
+        android:text="Type of Farmer"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/FieldSpinner"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genderSpinner"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/fieldHint" />
+        />
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FieldSpinner"
+        android:layout_marginTop="8dp"
+        android:hint="country"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country"
+        android:layout_marginTop="8dp"
+        android:hint="state"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/state"
+        android:layout_marginTop="8dp"
+        android:hint="address"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/state"
+        android:layout_marginTop="18dp"
+        android:text="Sign Up" />
+
+</RelativeLayout>
+</ScrollView>
