@@ -44,19 +44,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="72dp"
         android:background="#1CB11C"
-        android:cardCornerRadius="true"
         android:text="REGISTER" />
 
-    <Button
-        android:id="@+id/forgotPassword"
-        android:layout_width="148dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/password"
-        android:layout_marginStart="82dp"
-        android:layout_marginTop="74dp"
-        android:layout_toEndOf="@id/goToSignUpButton"
-        android:background="#1CB11C"
-        android:text="Forgot Password"
-        android:textSize="10sp" />
 
 </RelativeLayout>
